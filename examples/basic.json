@@ -1,0 +1,34 @@
+{
+  "type": "Firebase.Wrapper.Config",
+  "props": {
+    "config": {
+      "databaseURL": "https://rndm-com.firebaseio.com"
+    },
+    "children": {
+      "type": "Firebase.Dispatcher.Redux",
+      "props": {
+        "reference": "example",
+        "path": "test.view",
+        "children": {
+          "type": "RNDM.Renderer",
+          "props": {
+            "middleware": [
+              {
+                "middleware": "redux.connect",
+                "args": [
+                  [
+                    {
+                      "from": "rndm.test.view",
+                      "to": "layout",
+                      "default": null
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
