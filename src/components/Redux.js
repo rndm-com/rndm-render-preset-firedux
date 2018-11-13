@@ -1,4 +1,4 @@
-import { Base } from 'rndm-render-plugin-firebase';
+import { Base } from '@rndm/render-plugin-firebase';
 import { identity, set } from 'lodash';
 import { connect } from 'react-redux';
 import firebase from 'firebase';

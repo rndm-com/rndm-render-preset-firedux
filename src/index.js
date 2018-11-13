@@ -1,6 +1,7 @@
-import { Base } from 'rndm-render-plugin-firebase';
-import { use } from 'rndm-render/src/index';
-import components from './components/index';
+import { Base } from '@rndm/render-plugin-firebase';
+import { use } from '@rndm/render';
+import components from './components';
+import Firebase from './components/Firebase';
 
 const plugin = {
   key: 'Firebase',
@@ -8,5 +9,9 @@ const plugin = {
 };
 
 use(plugin);
+
+export {
+  Firebase,
+}
 
 export default plugin;
