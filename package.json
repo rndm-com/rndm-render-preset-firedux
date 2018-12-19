@@ -1,13 +1,22 @@
 {
-  "name": "rndm-render-preset-firedux",
+  "name": "@rndm/render-preset-firedux",
   "version": "0.1.0",
   "main": "src/index.js",
   "scripts": {},
   "author": "RNDM",
   "license": "Apache-2.0",
+  "description": "RNDM Render Preset: Firedux. Firebase and Redux functionality for RNDM Render",
+  "homepage": "https://github.com/rndm-com/rndm-render-preset-firedux#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rndm-com/rndm-render-preset-firedux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rndm-com/rndm-render-preset-firedux/issues"
+  },
   "dependencies": {
-    "rndm-render-preset-core": "file:///Users/paul.napier/Desktop/dev/mine/rndm/_plugins/_presets/rndm-render-preset-core",
-    "rndm-render-plugin-firebase": "file:///Users/paul.napier/Desktop/dev/mine/rndm/_plugins/rndm-render-plugin-firebase",
-    "rndm-render-plugin-redux": "file:///Users/paul.napier/Desktop/dev/mine/rndm/_plugins/rndm-render-plugin-redux"
+    "@rndm/render-preset-core": "^0.1.2",
+    "@rndm/render-plugin-firebase": "^0.1.0",
+    "@rndm/render-plugin-redux": "^0.1.0"
   }
 }
