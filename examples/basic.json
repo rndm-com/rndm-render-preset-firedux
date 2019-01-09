@@ -20,7 +20,9 @@
                     {
                       "from": "rndm.test.view",
                       "to": "layout",
-                      "default": null
+                      "default": {
+                        "type": "RNDM.Empty"
+                      }
                     }
                   ]
                 ]
