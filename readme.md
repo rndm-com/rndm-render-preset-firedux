@@ -22,7 +22,7 @@ npm install --save @rndm/render-preset-firedux
 
 ### Post Installation
 
-In order to allow this plugin to work, it must first be included in your project. You can do this inside yout main index file:
+In order to allow this plugin to work, it must first be included in your project. You can do this inside your main index file:
 
 ```javascript
 import '@rndm/render-preset-firedux';
@@ -34,7 +34,7 @@ import '@rndm/render-preset-firedux';
 
 #### Firebase.Dispatcher.Redux
 
-The Firedux Plugin contains one additional Component that sloves the integration of Firebase with a state based Redux approach (i.e. the views are maintained in the Redux state and changes are propigated to the listening Components)
+The Firedux Plugin contains one additional Component that solves the integration of Firebase with a state based Redux approach (i.e. the views are maintained in the Redux state and changes are propagated to the listening Components)
 
 **Example**
 
