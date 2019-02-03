@@ -1,18 +1,18 @@
-# RNDM Render Preset: Firedux
+# [RNDM](https://www.rndm.com) Render Preset: Firedux
 
 ## About
 
-This preset provides functionality for [RNDM Render package](https://github.com/rndm-com/rndm-render) for combined integrations of Firebase and Redux (Firedux!).
+This preset provides functionality for [RNDM Render package](https://www.rndm.com/docs/rndm-render) for combined integrations of Firebase and Redux (Firedux!).
 
 It includes the following packages:
 
-- [@rndm/render-preset-core](https://github.com/rndm-com/rndm-render-preset-core)
-- [@rndm/render-plugin-firebase](https://github.com/rndm-com/rndm-render-plugin-firebase)
-- [@rndm/render-plugin-redux](https://github.com/rndm-com/rndm-render-plugin-redux)
+- [@rndm/render-preset-core](https://www.rndm.com/docs/rndm-render/preset/core)
+- [@rndm/render-plugin-firebase](https://www.rndm.com/docs/rndm-render/plugin/firebase)
+- [@rndm/render-plugin-redux](https://www.rndm.com/docs/rndm-render/plugin/redux)
 
 ## Installation
 
-If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) package.
+If you have not already done so, then please ensure you have installed the [RNDM Render](https://www.rndm.com/docs/rndm-render) package.
 
 ### From NPM
 
@@ -108,3 +108,5 @@ export default MyView;
 Full examples can be found in the example library found in this project.
 
 https://github.com/rndm-com/rndm-render-preset-firedux/tree/master/examples
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
