@@ -1,5 +1,6 @@
 import Redux from './Redux';
 import Firebase from './Firebase';
+import Firestore from './Firestore';
 
 const components = [
   {
@@ -9,6 +10,10 @@ const components = [
   {
     type: 'Listener.Firebase',
     value: Firebase,
+  },
+  {
+    type: 'Listener.Firestore',
+    value: Firestore,
   },
 ];
 
