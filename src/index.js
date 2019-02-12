@@ -4,6 +4,7 @@ import * as redux from '@rndm/render-plugin-redux';
 
 import components from './components';
 import Firebase from './components/Firebase';
+import Firestore from './components/Firestore';
 
 const plugin = {
   key: 'Firebase',
@@ -14,6 +15,7 @@ use(plugin);
 
 export {
   Firebase,
+  Firestore,
   firebase,
   redux,
 };
