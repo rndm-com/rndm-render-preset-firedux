@@ -42,7 +42,7 @@ class Firestore extends Component {
 
     if (!endpoint) return;
 
-    const docs = queries.reduce((o, i) => o.where(...i), endpoint);
+    const docs = (queries || []).reduce((o, i) => o.where(...i), endpoint);
 
     switch (observe) {
       case true:

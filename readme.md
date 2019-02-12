@@ -40,7 +40,7 @@ Within this component, you are able to access your Firebase data either through 
 
 ##### With Database
 
-The Database option is the original JSON bases database system created with Firebase. It is extremely responsive and greate for persisitng simplistic JSON objects, such as light-weight views or small amounts of data. When used, it should be noted that there is a limit of 32 leves of depth, so complext or deep view structures can be rejected at the time of trying to persist. In a number of ways, the [RNDM Builder](https://www.rndm.com/docs/render/plugins/builder) plugin assists in reducing the overhead of this. However, if you require your API to go beyopnd this depth, then you will need to review the Firestore option.
+The Database option is the original JSON bases database system created with Firebase. It is extremely responsive and greate for persisitng simplistic JSON objects, such as light-weight views or small amounts of data. When used, it should be noted that there is a limit of 32 leves of depth, so complext or deep view structures can be rejected at the time of trying to persist. In a number of ways, the [RNDM Builder](https://www.rndm.com/docs/render/plugin/builder) plugin assists in reducing the overhead of this. However, if you require your API to go beyopnd this depth, then you will need to review the Firestore option.
 
 **Example**
 
@@ -67,7 +67,9 @@ The Database option is the original JSON bases database system created with Fire
                     {
                       "from": "rndm.test.view",
                       "to": "layout",
-                      "default": null
+                      "default": {
+                        "type": "RNDM.Empty"
+                      }
                     }
                   ]
                 ]
@@ -104,7 +106,7 @@ There are two different options with regards to the Firestore:
       "type": "Firebase.Dispatcher.Redux",
       "props": {
         "observer": "firestore",
-        "reference": "collection.document",
+        "reference": "collection/document",
         "path": "test.view",
         "observe": true,
         "children": {
@@ -118,7 +120,9 @@ There are two different options with regards to the Firestore:
                     {
                       "from": "rndm.test.view",
                       "to": "layout",
-                      "default": null
+                      "default": {
+                         "type": "RNDM.Empty"
+                       }
                     }
                   ]
                 ]
@@ -147,7 +151,7 @@ The above example will fetch the document called 'document' from a collection ca
       "type": "Firebase.Dispatcher.Redux",
       "props": {
         "observer": "firestore",
-        "reference": "collection0.document.collection1",
+        "reference": "collection0/document/collection1",
         "path": "test.view",
         "queries": [
           [
@@ -167,7 +171,9 @@ The above example will fetch the document called 'document' from a collection ca
                     {
                       "from": "rndm.test.view",
                       "to": "layout",
-                      "default": null
+                      "default": {
+                         "type": "RNDM.Empty"
+                       }
                     }
                   ]
                 ]
