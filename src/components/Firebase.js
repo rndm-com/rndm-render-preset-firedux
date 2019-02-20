@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { AsyncStorage } from 'react-native';
+import { noop } from 'lodash';
 
 class Firebase extends Component {
 
