@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { AsyncStorage } from 'react-native';
-import { withRouter } from 'react-router';
 import { noop } from 'lodash';
 
 class Firestore extends Component {
