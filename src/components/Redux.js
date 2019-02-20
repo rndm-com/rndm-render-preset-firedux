@@ -29,7 +29,6 @@ class Redux extends Base {
   };
 
   updateReference = () => {
-    console.log('updateReference');
     const { reference, path, name, queries, observer = DATABASE, observe } = this.state;
     try {
       if (!reference || !path) return;
@@ -70,7 +69,6 @@ class Redux extends Base {
   };
 
   render() {
-    console.log(this.props)
     return this.props.children;
   }
 }
