@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RNDM Render Preset: Firedux
 
 ## About
